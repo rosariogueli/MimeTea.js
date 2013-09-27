@@ -13,7 +13,7 @@ MimeTea.cup(".txt");
 
 If you want to submit an array of file types, MimeTea also supports it:<br/>
 MimeTea.cup(<br/>
-\t[".txt", ".html", ".css"]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;[".txt", ".html", ".css"]<br/>
 );
 
 Which will return the following Javascript array:<br/>

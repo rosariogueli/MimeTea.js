@@ -647,10 +647,13 @@ var MimeTea = (function(){
 	
 	var Tea = {
 	   cup: function(SugarType){
-	       SugarType = SugarType.toLowerCase();
-	       SugarType = SugarType.replace(/\./g, ''); // remove dots.
-	       SugarType = '.'+SugarType; // pre append one dot.
-	       return Mimes['.'+SugarType];
+	       // convert to lower case.
+	       // remove dots.
+	       // pre append one dot.
+	       // find in the Mimes list.
+	       return Mimes[
+	              '.'+SugarType.replace(/\./g, '').toLowerCase()
+	       ];
 	   }
 	};
 	

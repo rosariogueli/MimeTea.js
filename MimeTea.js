@@ -7,7 +7,6 @@ var MimeTea = (function(){
 		".ts": "video/MP2T",			// iPhone Segment	 
 		".3gp": "video/3gpp",			// 3GP Mobile	 
 		".mov": "video/quicktime",		// QuickTime	 
-		".avi": "video/x-msvideo",		// A/V Interleave	 
 		".wmv": "video/x-ms-wmv",		// Windows Media
 		".3dm": "x-world/x-3dmf",
 		".3dmf": "x-world/x-3dmf",

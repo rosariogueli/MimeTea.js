@@ -1,3 +1,14 @@
+/*!
+ * MimeTea JavaScript Library v1.0.1
+ * https://github.com/Rosario-Gueli/MimeTea.js
+ *
+ * Licence
+ * https://github.com/Rosario-Gueli/MimeTea.js/blob/master/LICENSE
+ *
+ * Date: 2013-09-27
+ */
+
+
 var MimeTea = (function(){
 	
 	var Mimes = {

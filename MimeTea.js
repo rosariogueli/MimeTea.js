@@ -12,13 +12,13 @@
 var MimeTea = (function(){
 	
 	var Mimes = {
-		".flv": "video/x-flv",			// Flash	 
-		".mp4": "video/mp4",			// MPEG-4	 
+		".flv": "video/x-flv",				// Flash	 
+		".mp4": "video/mp4",				// MPEG-4	 
 		".m3u8": "application/x-mpegURL",	// iPhone Index	 
-		".ts": "video/MP2T",			// iPhone Segment	 
-		".3gp": "video/3gpp",			// 3GP Mobile	 
-		".mov": "video/quicktime",		// QuickTime	 
-		".wmv": "video/x-ms-wmv",		// Windows Media
+		".ts": "video/MP2T",				// iPhone Segment	 
+		".3gp": "video/3gpp",				// 3GP Mobile	 
+		".mov": "video/quicktime",			// QuickTime	 
+		".wmv": "video/x-ms-wmv",			// Windows Media
 		".3dm": "x-world/x-3dmf",
 		".3dmf": "x-world/x-3dmf",
 		".a": "application/octet-stream",
@@ -663,19 +663,38 @@ var MimeTea = (function(){
 		".zsh": "text/x-script.zsh"
 	};
 	
+	function spoon(SugarType){
+		// convert to lower case.
+		// remove dots.
+		// pre append one dot.
+		// find in the Mimes list.
+		return Mimes[
+			'.'+SugarType.replace(/\./g, '').toLowerCase()
+		];
+	}
+	
 	var Tea = {
+	   // Empty tea cup here, need to drop some sugar ;)
+	   // SugarType parameter can be a string or an array of strings.
 	   cup: function(SugarType){
-	       // convert to lower case.
-	       // remove dots.
-	       // pre append one dot.
-	       // find in the Mimes list.
-	       return Mimes[
-	              '.'+SugarType.replace(/\./g, '').toLowerCase()
-	       ];
+	        // for a single spoon of SugarType, just return the MimeTea cup!
+		if(typeof SugarType === "string"){
+			return spoon(SugarType);
+		}
+		
+		// To prevent diabetes, it's better to focus on avoiding weight gain by eating a healthy, well-balanced diet.
+		// Lets check our array of SugarTypes and return an array of MimeTea cups!
+		if( Object.prototype.toString.call( SugarType ) === '[object Array]' ) {
+			var Cups = [];
+			for(var drop in SugarType){
+				Cups.push(spoon(SugarType[drop]));
+			}
+			return Cups;
+		}
+		return false;
 	   }
 	};
 	
 	return Tea;
 })();
-
 

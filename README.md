@@ -12,11 +12,11 @@ You can also submit a file type containing the dot like:<br/>
 MimeTea.cup(".txt");
 
 If you want to submit an array of file types, MimeTea also supports it:<br/>
-MimeTea.cup(
-    [".txt", ".html", ".css"]
+MimeTea.cup(<br/>
+    [".txt", ".html", ".css"]<br/>
 );
 
-Which will return the following Javascript array:
+Which will return the following Javascript array:<br/>
 ["text/plain", "text/html", "text/css"]
 
 Very useful for application that use the html file input tag where you'll need to specify the accept parameter to contain the correct mime type. 

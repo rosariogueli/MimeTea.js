@@ -1,9 +1,9 @@
 MimeTea.js
 ==========
 
-Useful Javascript class that gets the correct Mime Types by file extension.
+Get the correct Mime Types by file extension easily using this useful Javascript class.
 
-To use this Javascript helper class the only thing you need to do is just submit the file type you want to know the mime type from:<br/>
+To use this helper class the only thing you need to do is just submit the file type you want to know the mime type from:<br/>
 MimeTea.cup("txt");
 
 This will return "text/plain".

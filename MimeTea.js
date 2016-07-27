@@ -1,4 +1,4 @@
-/*!
+/*
  * MimeTea JavaScript Library v1.0.1
  * https://github.com/Rosario-Gueli/MimeTea.js
  *
@@ -687,8 +687,10 @@ var MimeTea = (function(){
 		    if( Object.prototype.toString.call( SugarType ) === '[object Array]' ) {
 				var Cups = [];
 				for(var drop in SugarType){
+                                    if(Cups.indexOf(spoon(SugarType[drop]))===-1)
 					Cups.push(spoon(SugarType[drop]));
 				}
+                                console.log(Cups);
 				return Cups;
 			}
 			return false;
@@ -697,4 +699,3 @@ var MimeTea = (function(){
 	
 	return Tea;
 })();
-

@@ -12,6 +12,9 @@
 var MimeTea = (function(){
 	
 	var Mimes = {
+                ".audios": "audio/*", // representing sound files (HTML5)
+                ".videos": "video/*", // representing video files (HTML5)
+                ".images": "image/*", // representing image files (HTML5)
 		".flv": "video/x-flv",				// Flash	 
 		".mp4": "video/mp4",				// MPEG-4	 
 		".m3u8": "application/x-mpegURL",	// iPhone Index	 

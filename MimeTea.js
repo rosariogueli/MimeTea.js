@@ -270,6 +270,8 @@ var MimeTea = (function(){
 		".m2a": "audio/mpeg",
 		".m2v": "video/mpeg",
 		".m3u": "audio/x-mpequrl",
+		".m4a": "audio/mp4",
+		".m4v": "video/mp4",
 		".man": "application/x-troff-man",
 		".map": "application/x-navimap",
 		".mar": "text/plain",

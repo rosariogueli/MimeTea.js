@@ -12,9 +12,11 @@
 var MimeTea = (function(){
 	
 	var Mimes = {
+                // HTML types support, see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#attr-accept
                 ".audios": "audio/*", // representing sound files (HTML5)
                 ".videos": "video/*", // representing video files (HTML5)
                 ".images": "image/*", // representing image files (HTML5)
+                
 		".flv": "video/x-flv",				// Flash	 
 		".mp4": "video/mp4",				// MPEG-4	 
 		".m3u8": "application/x-mpegURL",	// iPhone Index	 

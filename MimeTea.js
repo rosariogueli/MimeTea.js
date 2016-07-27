@@ -690,7 +690,6 @@ var MimeTea = (function(){
                                     if(Cups.indexOf(spoon(SugarType[drop]))===-1)
 					Cups.push(spoon(SugarType[drop]));
 				}
-                                console.log(Cups);
 				return Cups;
 			}
 			return false;

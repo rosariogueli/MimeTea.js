@@ -674,7 +674,7 @@ var MimeTea = (function(){
                 // convert to lower case.
 		// remove dots.
 		// pre append one dot.
-		// find in the Mimes list.
+		// find in the Mimes list. 
 		return Mimes[
 			'.'+SugarType.replace(/\./g, '').toLowerCase()
 		];
@@ -692,8 +692,9 @@ var MimeTea = (function(){
 		    if( Object.prototype.toString.call( SugarType ) === '[object Array]' ) {
 				var Cups = [];
 				for(var drop in SugarType){
-                                    if(Cups.indexOf(spoon(SugarType[drop]))===-1)
-					Cups.push(spoon(SugarType[drop]));
+                                    var mime = spoon(SugarType[drop]);
+                                    if(Cups.indexOf(mime)===-1)
+					Cups.push(mime);
 				}
 				return Cups;
 			}

@@ -410,7 +410,7 @@ var MimeTea = (function(){
 		".pre": "application/x-freelance",
 		".prt": "application/pro_eng",
 		".ps": "application/postscript",
-		".psd": "application/octet-stream",
+		".psd": "application/octet-stream,image/vnd.adobe.photoshop,application/x-photoshop,application/photoshop,application/psd,image/psd",
 		".pvu": "paleovu/x-pv",
 		".pwz": "application/vnd.ms-powerpoint",
 		".py": "text/x-script.phyton",
